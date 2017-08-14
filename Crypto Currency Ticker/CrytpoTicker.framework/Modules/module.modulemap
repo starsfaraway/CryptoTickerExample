@@ -1,0 +1,10 @@
+framework module CrytpoTicker {
+  umbrella header "CrytpoTicker.h"
+
+  export *
+  module * { export * }
+}
+
+module CrytpoTicker.Swift {
+    header "CrytpoTicker-Swift.h"
+}
