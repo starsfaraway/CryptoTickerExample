@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="previewCell" id="gTV-IL-0wX" customClass="CTPreviewCVCell" customModule="Crypto_Currency_Ticker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coinPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="dA3-23-g30">
+                        <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="6wd-r8-73v"/>
+                            <constraint firstAttribute="width" constant="60" id="SqU-FX-vf0"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6H-PO-4by">
+                        <rect key="frame" x="0.0" y="60" width="120" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$4,000.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSn-Kr-7JT">
+                        <rect key="frame" x="0.0" y="90" width="120" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3E-8G-Aiq">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Abg-oR-brH"/>
+                            <constraint firstAttribute="width" constant="60" id="euc-gb-sMp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="D6H-PO-4by" secondAttribute="trailing" id="3zZ-fu-WaL"/>
+                <constraint firstItem="D6H-PO-4by" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6kM-yb-MGb"/>
+                <constraint firstItem="bSn-Kr-7JT" firstAttribute="height" secondItem="D6H-PO-4by" secondAttribute="height" id="BZa-Hm-kPw"/>
+                <constraint firstItem="D6H-PO-4by" firstAttribute="top" secondItem="E3E-8G-Aiq" secondAttribute="bottom" id="CWQ-7I-ZcB"/>
+                <constraint firstAttribute="trailing" secondItem="dA3-23-g30" secondAttribute="trailing" id="EMa-mE-T0n"/>
+                <constraint firstItem="bSn-Kr-7JT" firstAttribute="top" secondItem="D6H-PO-4by" secondAttribute="bottom" id="MYp-PM-vHl"/>
+                <constraint firstItem="bSn-Kr-7JT" firstAttribute="top" secondItem="D6H-PO-4by" secondAttribute="bottom" id="T08-se-je1"/>
+                <constraint firstItem="E3E-8G-Aiq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WLA-SH-vex"/>
+                <constraint firstAttribute="trailing" secondItem="bSn-Kr-7JT" secondAttribute="trailing" id="c6O-iy-gxg"/>
+                <constraint firstItem="E3E-8G-Aiq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="moh-Dx-FJc"/>
+                <constraint firstItem="dA3-23-g30" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="qKx-zj-GFK"/>
+                <constraint firstItem="bSn-Kr-7JT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="r3E-mW-y06"/>
+                <constraint firstAttribute="bottom" secondItem="bSn-Kr-7JT" secondAttribute="bottom" id="zrZ-rl-8cg"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cryptoName" destination="D6H-PO-4by" id="ZRe-F6-U1l"/>
+                <outlet property="cryptoPrice" destination="bSn-Kr-7JT" id="ll1-XR-jOd"/>
+                <outlet property="iconImageView" destination="dA3-23-g30" id="rLx-4v-mii"/>
+                <outlet property="tickerSymbol" destination="E3E-8G-Aiq" id="GMb-2T-EB0"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="coinPlaceholder" width="60" height="60"/>
+    </resources>
+</document>
