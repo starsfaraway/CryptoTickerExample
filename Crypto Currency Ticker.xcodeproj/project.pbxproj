@@ -12,6 +12,7 @@
 		C921608D1F4139B000AFE567 /* CTPreviewCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C921608B1F4139B000AFE567 /* CTPreviewCVCell.xib */; };
 		C921608F1F41526300AFE567 /* CTInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C921608E1F41526300AFE567 /* CTInfoViewController.swift */; };
 		C92160941F416BDB00AFE567 /* CrytpoTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92160931F416BDB00AFE567 /* CrytpoTicker.framework */; };
+		C92160981F41715800AFE567 /* CrytpoTicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C92160931F416BDB00AFE567 /* CrytpoTicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A8A5BE1F401FEF00921950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8A5BD1F401FEF00921950 /* AppDelegate.swift */; };
 		C9A8A5C01F401FEF00921950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8A5BF1F401FEF00921950 /* ViewController.swift */; };
 		C9A8A5C31F401FEF00921950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A8A5C11F401FEF00921950 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C92160981F41715800AFE567 /* CrytpoTicker.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
