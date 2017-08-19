@@ -11,14 +11,31 @@
 		C921608C1F4139B000AFE567 /* CTPreviewCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C921608A1F4139B000AFE567 /* CTPreviewCVCell.swift */; };
 		C921608D1F4139B000AFE567 /* CTPreviewCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C921608B1F4139B000AFE567 /* CTPreviewCVCell.xib */; };
 		C921608F1F41526300AFE567 /* CTInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C921608E1F41526300AFE567 /* CTInfoViewController.swift */; };
-		C92160941F416BDB00AFE567 /* CrytpoTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92160931F416BDB00AFE567 /* CrytpoTicker.framework */; };
-		C92160981F41715800AFE567 /* CrytpoTicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C92160931F416BDB00AFE567 /* CrytpoTicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C971CE3D1F4805CB009AC2DD /* CrytpoTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C971CE3B1F4804E0009AC2DD /* CrytpoTicker.framework */; };
+		C971CE3E1F4805CB009AC2DD /* CrytpoTicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C971CE3B1F4804E0009AC2DD /* CrytpoTicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C9A8A5BE1F401FEF00921950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8A5BD1F401FEF00921950 /* AppDelegate.swift */; };
 		C9A8A5C01F401FEF00921950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8A5BF1F401FEF00921950 /* ViewController.swift */; };
 		C9A8A5C31F401FEF00921950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A8A5C11F401FEF00921950 /* Main.storyboard */; };
 		C9A8A5C51F401FEF00921950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A8A5C41F401FEF00921950 /* Assets.xcassets */; };
 		C9A8A5C81F401FEF00921950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A8A5C61F401FEF00921950 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C971CE3A1F4804E0009AC2DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C9A8A5931F40029F00921950;
+			remoteInfo = CrytpoTicker;
+		};
+		C971CE3F1F4805CB009AC2DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C9A8A5921F40029F00921950;
+			remoteInfo = CrytpoTicker;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C9A8A5D91F40201F00921950 /* Embed Frameworks */ = {
@@ -27,7 +44,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C92160981F41715800AFE567 /* CrytpoTicker.framework in Embed Frameworks */,
+				C971CE3E1F4805CB009AC2DD /* CrytpoTicker.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,7 +56,7 @@
 		C921608A1F4139B000AFE567 /* CTPreviewCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPreviewCVCell.swift; sourceTree = "<group>"; };
 		C921608B1F4139B000AFE567 /* CTPreviewCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTPreviewCVCell.xib; sourceTree = "<group>"; };
 		C921608E1F41526300AFE567 /* CTInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTInfoViewController.swift; sourceTree = "<group>"; };
-		C92160931F416BDB00AFE567 /* CrytpoTicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CrytpoTicker.framework; sourceTree = "<group>"; };
+		C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrytpoTicker.xcodeproj; path = ../../CrytpoTicker/CrytpoTicker.xcodeproj; sourceTree = "<group>"; };
 		C9A8A5BA1F401FEF00921950 /* Crypto Currency Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Currency Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A8A5BD1F401FEF00921950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A8A5BF1F401FEF00921950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92160941F416BDB00AFE567 /* CrytpoTicker.framework in Frameworks */,
+				C971CE3D1F4805CB009AC2DD /* CrytpoTicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +118,17 @@
 		C92160921F416B9000AFE567 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C92160931F416BDB00AFE567 /* CrytpoTicker.framework */,
+				C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C971CE361F4804E0009AC2DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C971CE3B1F4804E0009AC2DD /* CrytpoTicker.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		C9A8A5B11F401FEF00921950 = {
@@ -150,6 +175,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C971CE401F4805CB009AC2DD /* PBXTargetDependency */,
 			);
 			name = "Crypto Currency Ticker";
 			productName = "Crypto Currency Ticker";
@@ -184,12 +210,28 @@
 			mainGroup = C9A8A5B11F401FEF00921950;
 			productRefGroup = C9A8A5BB1F401FEF00921950 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C971CE361F4804E0009AC2DD /* Products */;
+					ProjectRef = C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C9A8A5B91F401FEF00921950 /* Crypto Currency Ticker */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C971CE3B1F4804E0009AC2DD /* CrytpoTicker.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CrytpoTicker.framework;
+			remoteRef = C971CE3A1F4804E0009AC2DD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C9A8A5B81F401FEF00921950 /* Resources */ = {
@@ -219,6 +261,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C971CE401F4805CB009AC2DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CrytpoTicker;
+			targetProxy = C971CE3F1F4805CB009AC2DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9A8A5C11F401FEF00921950 /* Main.storyboard */ = {
@@ -267,6 +317,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -318,6 +369,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -343,9 +395,12 @@
 				DEVELOPMENT_TEAM = LC6LA68FBS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Crypto\\ Currency\\ Ticker",
 					"$(PROJECT_DIR)/Crypto\\ Currency\\ Ticker",
 				);
 				INFOPLIST_FILE = "Crypto Currency Ticker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.farawaystars.Crypto-Currency-Ticker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,9 +416,12 @@
 				DEVELOPMENT_TEAM = LC6LA68FBS;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)/Crypto\\ Currency\\ Ticker",
 					"$(PROJECT_DIR)/Crypto\\ Currency\\ Ticker",
 				);
 				INFOPLIST_FILE = "Crypto Currency Ticker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.farawaystars.Crypto-Currency-Ticker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
