@@ -7,35 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BBCD4C68865B680898C9E30A /* Pods_Crypto_Currency_Ticker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 253BA6C2C0A7EC0EC0C775CE /* Pods_Crypto_Currency_Ticker.framework */; };
 		C92160891F41294D00AFE567 /* CTPreviewCollectionDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92160881F41294D00AFE567 /* CTPreviewCollectionDatasource.swift */; };
-		C921608C1F4139B000AFE567 /* CTPreviewCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C921608A1F4139B000AFE567 /* CTPreviewCVCell.swift */; };
 		C921608D1F4139B000AFE567 /* CTPreviewCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C921608B1F4139B000AFE567 /* CTPreviewCVCell.xib */; };
 		C921608F1F41526300AFE567 /* CTInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C921608E1F41526300AFE567 /* CTInfoViewController.swift */; };
-		C971CE3D1F4805CB009AC2DD /* CrytpoTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C971CE3B1F4804E0009AC2DD /* CrytpoTicker.framework */; };
-		C971CE3E1F4805CB009AC2DD /* CrytpoTicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C971CE3B1F4804E0009AC2DD /* CrytpoTicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C971CE531F494145009AC2DD /* CTPreviewCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C971CE521F494145009AC2DD /* CTPreviewCVCell.swift */; };
 		C9A8A5BE1F401FEF00921950 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8A5BD1F401FEF00921950 /* AppDelegate.swift */; };
 		C9A8A5C01F401FEF00921950 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A8A5BF1F401FEF00921950 /* ViewController.swift */; };
 		C9A8A5C31F401FEF00921950 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A8A5C11F401FEF00921950 /* Main.storyboard */; };
 		C9A8A5C51F401FEF00921950 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9A8A5C41F401FEF00921950 /* Assets.xcassets */; };
 		C9A8A5C81F401FEF00921950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A8A5C61F401FEF00921950 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C971CE3A1F4804E0009AC2DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C9A8A5931F40029F00921950;
-			remoteInfo = CrytpoTicker;
-		};
-		C971CE3F1F4805CB009AC2DD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C9A8A5921F40029F00921950;
-			remoteInfo = CrytpoTicker;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C9A8A5D91F40201F00921950 /* Embed Frameworks */ = {
@@ -44,7 +26,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C971CE3E1F4805CB009AC2DD /* CrytpoTicker.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,11 +33,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		253BA6C2C0A7EC0EC0C775CE /* Pods_Crypto_Currency_Ticker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crypto_Currency_Ticker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E8542E0B036589333A535A /* Pods-Crypto Currency Ticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto Currency Ticker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto Currency Ticker/Pods-Crypto Currency Ticker.debug.xcconfig"; sourceTree = "<group>"; };
 		C92160881F41294D00AFE567 /* CTPreviewCollectionDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPreviewCollectionDatasource.swift; sourceTree = "<group>"; };
-		C921608A1F4139B000AFE567 /* CTPreviewCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPreviewCVCell.swift; sourceTree = "<group>"; };
 		C921608B1F4139B000AFE567 /* CTPreviewCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CTPreviewCVCell.xib; sourceTree = "<group>"; };
 		C921608E1F41526300AFE567 /* CTInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTInfoViewController.swift; sourceTree = "<group>"; };
-		C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrytpoTicker.xcodeproj; path = ../../CrytpoTicker/CrytpoTicker.xcodeproj; sourceTree = "<group>"; };
+		C971CE521F494145009AC2DD /* CTPreviewCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTPreviewCVCell.swift; sourceTree = "<group>"; };
 		C9A8A5BA1F401FEF00921950 /* Crypto Currency Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Currency Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9A8A5BD1F401FEF00921950 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9A8A5BF1F401FEF00921950 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +46,7 @@
 		C9A8A5C41F401FEF00921950 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9A8A5C71F401FEF00921950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9A8A5C91F401FEF00921950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E54D2E817DF1663366A3D238 /* Pods-Crypto Currency Ticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crypto Currency Ticker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Crypto Currency Ticker/Pods-Crypto Currency Ticker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +54,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C971CE3D1F4805CB009AC2DD /* CrytpoTicker.framework in Frameworks */,
+				BBCD4C68865B680898C9E30A /* Pods_Crypto_Currency_Ticker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79688C629A972D43F9C8F87B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77E8542E0B036589333A535A /* Pods-Crypto Currency Ticker.debug.xcconfig */,
+				E54D2E817DF1663366A3D238 /* Pods-Crypto Currency Ticker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A41313E2594CD6274E114C23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				253BA6C2C0A7EC0EC0C775CE /* Pods_Crypto_Currency_Ticker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C921607E1F41274B00AFE567 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,7 +92,7 @@
 		C921607F1F41275800AFE567 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				C921608A1F4139B000AFE567 /* CTPreviewCVCell.swift */,
+				C971CE521F494145009AC2DD /* CTPreviewCVCell.swift */,
 				C921608B1F4139B000AFE567 /* CTPreviewCVCell.xib */,
 			);
 			name = UICollectionView;
@@ -115,27 +115,13 @@
 			name = "Delegates and Datasources";
 			sourceTree = "<group>";
 		};
-		C92160921F416B9000AFE567 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C971CE361F4804E0009AC2DD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C971CE3B1F4804E0009AC2DD /* CrytpoTicker.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C9A8A5B11F401FEF00921950 = {
 			isa = PBXGroup;
 			children = (
 				C9A8A5BC1F401FEF00921950 /* Crypto Currency Ticker */,
 				C9A8A5BB1F401FEF00921950 /* Products */,
+				79688C629A972D43F9C8F87B /* Pods */,
+				A41313E2594CD6274E114C23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,7 +136,6 @@
 		C9A8A5BC1F401FEF00921950 /* Crypto Currency Ticker */ = {
 			isa = PBXGroup;
 			children = (
-				C92160921F416B9000AFE567 /* Frameworks */,
 				C92160871F41291C00AFE567 /* Delegates and Datasources */,
 				C9A8A5BD1F401FEF00921950 /* AppDelegate.swift */,
 				C9A8A5C91F401FEF00921950 /* Info.plist */,
@@ -167,15 +152,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9A8A5CC1F401FEF00921950 /* Build configuration list for PBXNativeTarget "Crypto Currency Ticker" */;
 			buildPhases = (
+				9BB10A49EA0F6F8A1DC479FD /* [CP] Check Pods Manifest.lock */,
 				C9A8A5B61F401FEF00921950 /* Sources */,
 				C9A8A5B71F401FEF00921950 /* Frameworks */,
 				C9A8A5B81F401FEF00921950 /* Resources */,
 				C9A8A5D91F40201F00921950 /* Embed Frameworks */,
+				FA237571FF00530ADA2820C3 /* [CP] Embed Pods Frameworks */,
+				C79C8029124D07B9A74B1F16 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C971CE401F4805CB009AC2DD /* PBXTargetDependency */,
 			);
 			name = "Crypto Currency Ticker";
 			productName = "Crypto Currency Ticker";
@@ -210,28 +197,12 @@
 			mainGroup = C9A8A5B11F401FEF00921950;
 			productRefGroup = C9A8A5BB1F401FEF00921950 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C971CE361F4804E0009AC2DD /* Products */;
-					ProjectRef = C971CE351F4804E0009AC2DD /* CrytpoTicker.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C9A8A5B91F401FEF00921950 /* Crypto Currency Ticker */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		C971CE3B1F4804E0009AC2DD /* CrytpoTicker.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CrytpoTicker.framework;
-			remoteRef = C971CE3A1F4804E0009AC2DD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C9A8A5B81F401FEF00921950 /* Resources */ = {
@@ -247,6 +218,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BB10A49EA0F6F8A1DC479FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crypto Currency Ticker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79C8029124D07B9A74B1F16 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crypto Currency Ticker/Pods-Crypto Currency Ticker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA237571FF00530ADA2820C3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Crypto Currency Ticker/Pods-Crypto Currency Ticker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CrytpoTicker/CrytpoTicker.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CrytpoTicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Crypto Currency Ticker/Pods-Crypto Currency Ticker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C9A8A5B61F401FEF00921950 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -254,21 +281,13 @@
 			files = (
 				C921608F1F41526300AFE567 /* CTInfoViewController.swift in Sources */,
 				C9A8A5C01F401FEF00921950 /* ViewController.swift in Sources */,
+				C971CE531F494145009AC2DD /* CTPreviewCVCell.swift in Sources */,
 				C9A8A5BE1F401FEF00921950 /* AppDelegate.swift in Sources */,
-				C921608C1F4139B000AFE567 /* CTPreviewCVCell.swift in Sources */,
 				C92160891F41294D00AFE567 /* CTPreviewCollectionDatasource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C971CE401F4805CB009AC2DD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CrytpoTicker;
-			targetProxy = C971CE3F1F4805CB009AC2DD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9A8A5C11F401FEF00921950 /* Main.storyboard */ = {
@@ -389,6 +408,7 @@
 		};
 		C9A8A5CD1F401FEF00921950 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E8542E0B036589333A535A /* Pods-Crypto Currency Ticker.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -410,6 +430,7 @@
 		};
 		C9A8A5CE1F401FEF00921950 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E54D2E817DF1663366A3D238 /* Pods-Crypto Currency Ticker.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
