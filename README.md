@@ -9,7 +9,8 @@
 
 <body>
 <h1>Crypto Ticker Example</h1>
-Example app using the CryptoTicker framework.
+  <div>
+  Example using the <a href=https://github.com/starsfaraway/CrytpoTicker>CryptoTicker</a> framework.</div>
 <br>
 
 <br><br>
