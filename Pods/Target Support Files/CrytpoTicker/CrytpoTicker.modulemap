@@ -1,0 +1,6 @@
+framework module CrytpoTicker {
+  umbrella header "CrytpoTicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

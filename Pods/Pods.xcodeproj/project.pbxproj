@@ -1,0 +1,894 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031F65A1F96D6F46E5C45E3937057C05 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4EFCC028BC1CBD9AEF6BEE117E5F47CE /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E5B9849E1B6EF82960B5D7F8108EB64 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F6CB86CF17B92B500AD2488E1BF9A5A /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A91EC247ED3735A59AF71F72154F6EE /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DF6D5C93E83C7C23079C188B0334B /* UIImage+GIF.m */; };
+		1D1D0B03C2D0B4F5A76F6611D7D3DE52 /* SDWebImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8E4F79C65EC7613791F05470FABD1E /* SDWebImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F497FCE1DE42266AA7C54041CBBC5D4 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEFD9B9ABC8F2851191A8286A347409 /* UIImageView+WebCache.m */; };
+		1F54149AAF79DF7FAAC155046B7BBB66 /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2163E57902D4083841FA95351A35F293 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		211DE54B2EF9FE8F45B14BCF1F039B38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */; };
+		288C5FA6B973796965F65028CCCA14C9 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A733C2AA731B7F69CA716827ACB99781 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BF46A88079AA1294E78250827F5F3FC /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = FA529581B980B5C8D6AA550C36AC42DC /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3012A079382DB5A0BEE58CE7E0E09DEF /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 011852E0BA39FF8A372E2F893D2B90AE /* SDWebImageManager.m */; };
+		33A0A7DBCFF3618E95EE45692259E2A6 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D6BD2D7D322A88E9E1714A39055A28FD /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37BB110711BFC7D61D2DAE50A4EF23D8 /* CrytpoTicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52A7B6E20EE82DC0CE0B7ED7B8AC741E /* CrytpoTicker-dummy.m */; };
+		399ADE50F093F3223111B57D2DB17E0B /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D7A05753990B6C0FB00F2C9F2FE6DB /* SDWebImagePrefetcher.m */; };
+		3B9FB14E5CD9F4FD53CC628E7521131C /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F9AC5A7E45C321228BD92521C7AB956 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E1A4E2514B0AB29C111A1C9F542E6D5 /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CD7EA3D6D6C1CFA70638ED7FB768E2F /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		430534B6AF1DB3FD690035697FEFE36D /* MRObjectArchive.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB6667FA7F4FF5C07EF556A97C1FE87 /* MRObjectArchive.swift */; };
+		5EFB89980FB29AE90E4F69B80C1DE498 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 352CEA7EE0D9606BD335FB7BBA47ADA8 /* UIButton+WebCache.m */; };
+		61CF8B3BE1EA6D2A7C39AF3D8E2D58DB /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B5EF1CA9437A9DA6AB51A91C78938B9D /* UIView+WebCacheOperation.m */; };
+		660E328A4AF43CF086DFF3225335AC0B /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E3DADD14CE0A56C8B1A92FCB0AF2DD /* SDWebImageDownloaderOperation.m */; };
+		677B19D317DE7E7F64D1B182C401BDF1 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 72BA7A906AAAF8CE92C860484B7B6A34 /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C64610795CA60F89797D179CB070313 /* CrytpoTicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 513D9AF42D302E465B4208D9ECECED6C /* CrytpoTicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F0BDACA0B6E6311B8CE93013F1CEB02 /* Pods-Crypto Currency Ticker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79501931DC5C8C7E22A305B5DD4E3178 /* Pods-Crypto Currency Ticker-dummy.m */; };
+		73B8E27E70CC4C37B5503AA1C8844F32 /* Pods-Crypto Currency Ticker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 481DB384D050660431DB977279CCAF39 /* Pods-Crypto Currency Ticker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78D0B2BC4896D6AEB7E11671E9F585F8 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9D1B8493D74C8CBF62512FCB50824D /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E7634AFCC8FDDDB143ECFC8FA167FFE /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0291D556F8FC76F2B7C0A443DB9300F0 /* UIView+WebCache.m */; };
+		8E2C26F4C312E4897FC24B7562514957 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E29C3D60E80AC61470EC8409C8690C /* SDWebImage-dummy.m */; };
+		8E57716AF4A5A25AD91F2110251412A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */; };
+		8EC373D4173DBAE01DE319ECDB4C15BC /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF4B164B7BBBE4ED4E68B471E20B6B8 /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9465A95BAC5359AA55B3EF7AAB9A9D67 /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E51836B4C0795FBDDA7191219DDEE23 /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95411D82D2E0AC4C788C94C3C927C971 /* CTAPIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D6FB80C82995B39B9B3A64A5056C332 /* CTAPIController.swift */; };
+		9AEAEFEC4DE96954CAF6BD379C631DDF /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = EC79B073E504A5C7DE982F755DB77C3C /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A101F2D6E76BB703132C76F0116B4902 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 14B65DAEBC6C35F843D46E59BC82B14B /* NSData+ImageContentType.m */; };
+		AE23E15FED118129C08D6F662692C36E /* CrytpoTicker.h in Headers */ = {isa = PBXBuildFile; fileRef = F7C7A0E7C453E3775121818BBE8E6760 /* CrytpoTicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE82B4B43AAA34AFD04DEC88C63013CD /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D1DFD037A7BF3315C24C6FCCCF93A3E /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B191F891DC24F5BA3898E59CF4D3FF7C /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E78E5EC5AA919AA70641C152C9AF387 /* NSImage+WebCache.m */; };
+		B917F6425D26BF42890E8FB9EF9760B6 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = B152FAB45B81B5268F6AFA3AE63B8BE4 /* SDImageCacheConfig.m */; };
+		B941642D395ACC7A65AA557B370E6B2D /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 557BDB586597CF68697A50766F7AFD35 /* SDWebImageCompat.m */; };
+		B94C5A8E3AAAFF778078C4A5A665B596 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9634EF783F0F1508E7BC15B9914F48E5 /* SDImageCache.m */; };
+		C0897BE69340F6847D8D4055756FC347 /* CoinMarketCapConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC203ED38069FD122DA72FFA33B2F27 /* CoinMarketCapConstants.swift */; };
+		C5BB5084C0B62A2B5AAF71DA739D07DB /* NSImage+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 862B88D665F943152254BCE15CDC5A30 /* NSImage+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCBA9814F93C747496E076FD904D97B6 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = C75E49B32C7F6ACC7C446980B62D95C3 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4CF64D56600E222725026178FBA2291 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = F07AE26346F2A6C77EBF46A65CACD461 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC17A57C0D73E33EC7EB9F1798E5372F /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AC3902B618439448F34F50E725A06B /* UIImage+MultiFormat.m */; };
+		DCE8E912AEAE435542CF9C23E8E84F67 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635A4BD1CEF7E623C71F97A54BFC3616 /* ImageIO.framework */; };
+		E6468653451DFD3CEB564A22F252C1A4 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED4CE9A83620C6EE0A4A9A73E6D045 /* Ticker.swift */; };
+		E8FF791F2C608C2B4166E9C280694981 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = FB344513E42A121E625C2F45BB188833 /* SDWebImageDecoder.m */; };
+		F057B9ECA928430D947DF13FF0EC5AA0 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A0E97E11B9FB7D94E625BF7932B4A /* UIImageView+HighlightedWebCache.m */; };
+		F3EEE8F4FA9A0632E2294670F61729C5 /* CryptoTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426C786F828CF0215FEF1D9B5046AEBA /* CryptoTicker.swift */; };
+		F5F931FB109D43AC0A673F5DB4A822C9 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0741E3802FD5E3C510C352E52CBFA798 /* SDWebImageDownloader.m */; };
+		F6AE2C3E3FDFB60BD1C26D033D7EC6C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */; };
+		FECD291CC6CA9C72AB3948C62AF121FF /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B1AA4A03D0574E03659C3230B4171B8 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0627483ECB163D69AB745955949A4B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CAE7E75B6B13F190E00153035DDC966;
+			remoteInfo = CrytpoTicker;
+		};
+		ACD170010220F83E2BE69EE82262DF25 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41F4A04976E2246E670B4C3D4283B537;
+			remoteInfo = SDWebImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		011852E0BA39FF8A372E2F893D2B90AE /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		0291D556F8FC76F2B7C0A443DB9300F0 /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
+		0741E3802FD5E3C510C352E52CBFA798 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		0B1AA4A03D0574E03659C3230B4171B8 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		0D1DFD037A7BF3315C24C6FCCCF93A3E /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		0DC203ED38069FD122DA72FFA33B2F27 /* CoinMarketCapConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoinMarketCapConstants.swift; path = CrytpoTicker/CoinMarketCapConstants.swift; sourceTree = "<group>"; };
+		0E51836B4C0795FBDDA7191219DDEE23 /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
+		0E5F89B2C820603000BA1A193ECB0D84 /* Pods_Crypto_Currency_Ticker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Crypto_Currency_Ticker.framework; path = "Pods-Crypto Currency Ticker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B65DAEBC6C35F843D46E59BC82B14B /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		17ED4CE9A83620C6EE0A4A9A73E6D045 /* Ticker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Ticker.swift; path = CrytpoTicker/Ticker.swift; sourceTree = "<group>"; };
+		1BA5CB9A6E5C807D9206DF829179A56B /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SDWebImage.modulemap; sourceTree = "<group>"; };
+		1D953EA848990020E31254A407D26CB0 /* CrytpoTicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CrytpoTicker-prefix.pch"; sourceTree = "<group>"; };
+		2163E57902D4083841FA95351A35F293 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		2B50EBDEA99A7A35EE7ACE6F2711E1FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DCB0B1E62918A52383FB4D04830950C /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		352CEA7EE0D9606BD335FB7BBA47ADA8 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		3CD7EA3D6D6C1CFA70638ED7FB768E2F /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
+		3F2DF6D5C93E83C7C23079C188B0334B /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		3F8E4F79C65EC7613791F05470FABD1E /* SDWebImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDecoder.h; path = SDWebImage/SDWebImageDecoder.h; sourceTree = "<group>"; };
+		3FCF9B326930177259B8081591DF1A7C /* CrytpoTicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CrytpoTicker.xcconfig; sourceTree = "<group>"; };
+		426C786F828CF0215FEF1D9B5046AEBA /* CryptoTicker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CryptoTicker.swift; path = CrytpoTicker/CryptoTicker.swift; sourceTree = "<group>"; };
+		481DB384D050660431DB977279CCAF39 /* Pods-Crypto Currency Ticker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Crypto Currency Ticker-umbrella.h"; sourceTree = "<group>"; };
+		4D6FB80C82995B39B9B3A64A5056C332 /* CTAPIController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTAPIController.swift; path = CrytpoTicker/CTAPIController.swift; sourceTree = "<group>"; };
+		4EFCC028BC1CBD9AEF6BEE117E5F47CE /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		4F6CB86CF17B92B500AD2488E1BF9A5A /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		513D9AF42D302E465B4208D9ECECED6C /* CrytpoTicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CrytpoTicker-umbrella.h"; sourceTree = "<group>"; };
+		52A7B6E20EE82DC0CE0B7ED7B8AC741E /* CrytpoTicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CrytpoTicker-dummy.m"; sourceTree = "<group>"; };
+		557BDB586597CF68697A50766F7AFD35 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		5F9AC5A7E45C321228BD92521C7AB956 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		635A4BD1CEF7E623C71F97A54BFC3616 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		6A116D5BAABEE4C9795A13F12F5057D5 /* CrytpoTicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CrytpoTicker.framework; path = CrytpoTicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AACD215F54A2AF1105A9A83C0E8C4EE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6DEFD9B9ABC8F2851191A8286A347409 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		70BD39FE7F28E927EF25219519BAE137 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72BA7A906AAAF8CE92C860484B7B6A34 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
+		79501931DC5C8C7E22A305B5DD4E3178 /* Pods-Crypto Currency Ticker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Crypto Currency Ticker-dummy.m"; sourceTree = "<group>"; };
+		7D9D1121798742ADD77597C74F9FB8EB /* Pods-Crypto Currency Ticker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Crypto Currency Ticker-frameworks.sh"; sourceTree = "<group>"; };
+		7D9D1B8493D74C8CBF62512FCB50824D /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		862B88D665F943152254BCE15CDC5A30 /* NSImage+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "SDWebImage/NSImage+WebCache.h"; sourceTree = "<group>"; };
+		874CD86B2B9F601F6B602120ED2985B9 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9634EF783F0F1508E7BC15B9914F48E5 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		9C8E0AA6EE5CD9EBB19912FC4848D702 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		9E78E5EC5AA919AA70641C152C9AF387 /* NSImage+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+WebCache.m"; path = "SDWebImage/NSImage+WebCache.m"; sourceTree = "<group>"; };
+		A733C2AA731B7F69CA716827ACB99781 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		B023F1776B3430EDA0E7EE84896A02AF /* Pods-Crypto Currency Ticker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Crypto Currency Ticker.modulemap"; sourceTree = "<group>"; };
+		B152FAB45B81B5268F6AFA3AE63B8BE4 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
+		B2E29C3D60E80AC61470EC8409C8690C /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		B5EF1CA9437A9DA6AB51A91C78938B9D /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		B77415A8BC8FA3289AA4ACD38BECD9F7 /* Pods-Crypto Currency Ticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Crypto Currency Ticker.release.xcconfig"; sourceTree = "<group>"; };
+		C4B6E15E586C8877C595424AB02C978D /* Pods-Crypto Currency Ticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Crypto Currency Ticker.debug.xcconfig"; sourceTree = "<group>"; };
+		C5E3DADD14CE0A56C8B1A92FCB0AF2DD /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		C75E49B32C7F6ACC7C446980B62D95C3 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		D6BD2D7D322A88E9E1714A39055A28FD /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		DB7A0E97E11B9FB7D94E625BF7932B4A /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		DCF4B164B7BBBE4ED4E68B471E20B6B8 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		E3AC3902B618439448F34F50E725A06B /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		EC79B073E504A5C7DE982F755DB77C3C /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		F07AE26346F2A6C77EBF46A65CACD461 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
+		F18F86F46AC3562E2AAC1BD8832CC833 /* Pods-Crypto Currency Ticker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Crypto Currency Ticker-acknowledgements.plist"; sourceTree = "<group>"; };
+		F3D7A05753990B6C0FB00F2C9F2FE6DB /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		F7C7A0E7C453E3775121818BBE8E6760 /* CrytpoTicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CrytpoTicker.h; path = CrytpoTicker/CrytpoTicker.h; sourceTree = "<group>"; };
+		FA529581B980B5C8D6AA550C36AC42DC /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		FA6486A9BED3A444F43AA310013D578A /* Pods-Crypto Currency Ticker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Crypto Currency Ticker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FAFDF2A28D7156BBE6EB30A707D4B300 /* Pods-Crypto Currency Ticker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Crypto Currency Ticker-resources.sh"; sourceTree = "<group>"; };
+		FB344513E42A121E625C2F45BB188833 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDecoder.m; path = SDWebImage/SDWebImageDecoder.m; sourceTree = "<group>"; };
+		FF195B8CD4B551AD40607F874CFB48D6 /* CrytpoTicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CrytpoTicker.modulemap; sourceTree = "<group>"; };
+		FFB6667FA7F4FF5C07EF556A97C1FE87 /* MRObjectArchive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MRObjectArchive.swift; path = CrytpoTicker/MRObjectArchive.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		896658E781E09FE70B20107F61CDFFFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211DE54B2EF9FE8F45B14BCF1F039B38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BDA7C8FFF3DF5C5200CD6B3C046335B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6AE2C3E3FDFB60BD1C26D033D7EC6C5 /* Foundation.framework in Frameworks */,
+				DCE8E912AEAE435542CF9C23E8E84F67 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09B3BB513FF084786C1AD1A0456C5FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E57716AF4A5A25AD91F2110251412A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FADA36CBBEBF5DF6696194D87183478 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6CE29CF4FF5C02028C0A06EC0D2A6120 /* Foundation.framework */,
+				635A4BD1CEF7E623C71F97A54BFC3616 /* ImageIO.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2BC6C1F1B9475199FC5604B6E61BC1D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A939944B2343FAAFAD2A34DDD132FE1 /* CrytpoTicker */,
+				A9D7313CAEA1644F00C4658E4314FF26 /* SDWebImage */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FADA36CBBEBF5DF6696194D87183478 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A939944B2343FAAFAD2A34DDD132FE1 /* CrytpoTicker */ = {
+			isa = PBXGroup;
+			children = (
+				0DC203ED38069FD122DA72FFA33B2F27 /* CoinMarketCapConstants.swift */,
+				426C786F828CF0215FEF1D9B5046AEBA /* CryptoTicker.swift */,
+				F7C7A0E7C453E3775121818BBE8E6760 /* CrytpoTicker.h */,
+				4D6FB80C82995B39B9B3A64A5056C332 /* CTAPIController.swift */,
+				FFB6667FA7F4FF5C07EF556A97C1FE87 /* MRObjectArchive.swift */,
+				17ED4CE9A83620C6EE0A4A9A73E6D045 /* Ticker.swift */,
+				F89BECBD8C6789C3C19BCF83D6E627F8 /* Support Files */,
+			);
+			name = CrytpoTicker;
+			path = CrytpoTicker;
+			sourceTree = "<group>";
+		};
+		787CC0D87B5C170EBABACC61CEA7535D /* Pods-Crypto Currency Ticker */ = {
+			isa = PBXGroup;
+			children = (
+				70BD39FE7F28E927EF25219519BAE137 /* Info.plist */,
+				B023F1776B3430EDA0E7EE84896A02AF /* Pods-Crypto Currency Ticker.modulemap */,
+				FA6486A9BED3A444F43AA310013D578A /* Pods-Crypto Currency Ticker-acknowledgements.markdown */,
+				F18F86F46AC3562E2AAC1BD8832CC833 /* Pods-Crypto Currency Ticker-acknowledgements.plist */,
+				79501931DC5C8C7E22A305B5DD4E3178 /* Pods-Crypto Currency Ticker-dummy.m */,
+				7D9D1121798742ADD77597C74F9FB8EB /* Pods-Crypto Currency Ticker-frameworks.sh */,
+				FAFDF2A28D7156BBE6EB30A707D4B300 /* Pods-Crypto Currency Ticker-resources.sh */,
+				481DB384D050660431DB977279CCAF39 /* Pods-Crypto Currency Ticker-umbrella.h */,
+				C4B6E15E586C8877C595424AB02C978D /* Pods-Crypto Currency Ticker.debug.xcconfig */,
+				B77415A8BC8FA3289AA4ACD38BECD9F7 /* Pods-Crypto Currency Ticker.release.xcconfig */,
+			);
+			name = "Pods-Crypto Currency Ticker";
+			path = "Target Support Files/Pods-Crypto Currency Ticker";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				2BC6C1F1B9475199FC5604B6E61BC1D2 /* Pods */,
+				AD21D4C5FDF61448F1B912F81E1E6038 /* Products */,
+				DF710EE24C74D95DEF0F295FB6424155 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A21103EBD7B0F2D708F52DCBC8DAD481 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B50EBDEA99A7A35EE7ACE6F2711E1FA /* Info.plist */,
+				1BA5CB9A6E5C807D9206DF829179A56B /* SDWebImage.modulemap */,
+				874CD86B2B9F601F6B602120ED2985B9 /* SDWebImage.xcconfig */,
+				B2E29C3D60E80AC61470EC8409C8690C /* SDWebImage-dummy.m */,
+				9C8E0AA6EE5CD9EBB19912FC4848D702 /* SDWebImage-prefix.pch */,
+				0E51836B4C0795FBDDA7191219DDEE23 /* SDWebImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDWebImage";
+			sourceTree = "<group>";
+		};
+		A9D7313CAEA1644F00C4658E4314FF26 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				F531D45998654F56ADC78D7B1C6B8CB7 /* Core */,
+				A21103EBD7B0F2D708F52DCBC8DAD481 /* Support Files */,
+			);
+			name = SDWebImage;
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		AD21D4C5FDF61448F1B912F81E1E6038 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A116D5BAABEE4C9795A13F12F5057D5 /* CrytpoTicker.framework */,
+				0E5F89B2C820603000BA1A193ECB0D84 /* Pods_Crypto_Currency_Ticker.framework */,
+				2DCB0B1E62918A52383FB4D04830950C /* SDWebImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF710EE24C74D95DEF0F295FB6424155 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				787CC0D87B5C170EBABACC61CEA7535D /* Pods-Crypto Currency Ticker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F531D45998654F56ADC78D7B1C6B8CB7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4F6CB86CF17B92B500AD2488E1BF9A5A /* NSData+ImageContentType.h */,
+				14B65DAEBC6C35F843D46E59BC82B14B /* NSData+ImageContentType.m */,
+				862B88D665F943152254BCE15CDC5A30 /* NSImage+WebCache.h */,
+				9E78E5EC5AA919AA70641C152C9AF387 /* NSImage+WebCache.m */,
+				D6BD2D7D322A88E9E1714A39055A28FD /* SDImageCache.h */,
+				9634EF783F0F1508E7BC15B9914F48E5 /* SDImageCache.m */,
+				72BA7A906AAAF8CE92C860484B7B6A34 /* SDImageCacheConfig.h */,
+				B152FAB45B81B5268F6AFA3AE63B8BE4 /* SDImageCacheConfig.m */,
+				7D9D1B8493D74C8CBF62512FCB50824D /* SDWebImageCompat.h */,
+				557BDB586597CF68697A50766F7AFD35 /* SDWebImageCompat.m */,
+				3F8E4F79C65EC7613791F05470FABD1E /* SDWebImageDecoder.h */,
+				FB344513E42A121E625C2F45BB188833 /* SDWebImageDecoder.m */,
+				4EFCC028BC1CBD9AEF6BEE117E5F47CE /* SDWebImageDownloader.h */,
+				0741E3802FD5E3C510C352E52CBFA798 /* SDWebImageDownloader.m */,
+				EC79B073E504A5C7DE982F755DB77C3C /* SDWebImageDownloaderOperation.h */,
+				C5E3DADD14CE0A56C8B1A92FCB0AF2DD /* SDWebImageDownloaderOperation.m */,
+				DCF4B164B7BBBE4ED4E68B471E20B6B8 /* SDWebImageManager.h */,
+				011852E0BA39FF8A372E2F893D2B90AE /* SDWebImageManager.m */,
+				0B1AA4A03D0574E03659C3230B4171B8 /* SDWebImageOperation.h */,
+				FA529581B980B5C8D6AA550C36AC42DC /* SDWebImagePrefetcher.h */,
+				F3D7A05753990B6C0FB00F2C9F2FE6DB /* SDWebImagePrefetcher.m */,
+				A733C2AA731B7F69CA716827ACB99781 /* UIButton+WebCache.h */,
+				352CEA7EE0D9606BD335FB7BBA47ADA8 /* UIButton+WebCache.m */,
+				F07AE26346F2A6C77EBF46A65CACD461 /* UIImage+GIF.h */,
+				3F2DF6D5C93E83C7C23079C188B0334B /* UIImage+GIF.m */,
+				C75E49B32C7F6ACC7C446980B62D95C3 /* UIImage+MultiFormat.h */,
+				E3AC3902B618439448F34F50E725A06B /* UIImage+MultiFormat.m */,
+				2163E57902D4083841FA95351A35F293 /* UIImageView+HighlightedWebCache.h */,
+				DB7A0E97E11B9FB7D94E625BF7932B4A /* UIImageView+HighlightedWebCache.m */,
+				0D1DFD037A7BF3315C24C6FCCCF93A3E /* UIImageView+WebCache.h */,
+				6DEFD9B9ABC8F2851191A8286A347409 /* UIImageView+WebCache.m */,
+				3CD7EA3D6D6C1CFA70638ED7FB768E2F /* UIView+WebCache.h */,
+				0291D556F8FC76F2B7C0A443DB9300F0 /* UIView+WebCache.m */,
+				5F9AC5A7E45C321228BD92521C7AB956 /* UIView+WebCacheOperation.h */,
+				B5EF1CA9437A9DA6AB51A91C78938B9D /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		F89BECBD8C6789C3C19BCF83D6E627F8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF195B8CD4B551AD40607F874CFB48D6 /* CrytpoTicker.modulemap */,
+				3FCF9B326930177259B8081591DF1A7C /* CrytpoTicker.xcconfig */,
+				52A7B6E20EE82DC0CE0B7ED7B8AC741E /* CrytpoTicker-dummy.m */,
+				1D953EA848990020E31254A407D26CB0 /* CrytpoTicker-prefix.pch */,
+				513D9AF42D302E465B4208D9ECECED6C /* CrytpoTicker-umbrella.h */,
+				6AACD215F54A2AF1105A9A83C0E8C4EE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CrytpoTicker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2AADE495BFA1AB95F588CB9CE313E826 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C64610795CA60F89797D179CB070313 /* CrytpoTicker-umbrella.h in Headers */,
+				AE23E15FED118129C08D6F662692C36E /* CrytpoTicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59B3EC1E1C388C8F63342BA368789A53 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E5B9849E1B6EF82960B5D7F8108EB64 /* NSData+ImageContentType.h in Headers */,
+				C5BB5084C0B62A2B5AAF71DA739D07DB /* NSImage+WebCache.h in Headers */,
+				33A0A7DBCFF3618E95EE45692259E2A6 /* SDImageCache.h in Headers */,
+				677B19D317DE7E7F64D1B182C401BDF1 /* SDImageCacheConfig.h in Headers */,
+				9465A95BAC5359AA55B3EF7AAB9A9D67 /* SDWebImage-umbrella.h in Headers */,
+				78D0B2BC4896D6AEB7E11671E9F585F8 /* SDWebImageCompat.h in Headers */,
+				1D1D0B03C2D0B4F5A76F6611D7D3DE52 /* SDWebImageDecoder.h in Headers */,
+				031F65A1F96D6F46E5C45E3937057C05 /* SDWebImageDownloader.h in Headers */,
+				9AEAEFEC4DE96954CAF6BD379C631DDF /* SDWebImageDownloaderOperation.h in Headers */,
+				8EC373D4173DBAE01DE319ECDB4C15BC /* SDWebImageManager.h in Headers */,
+				FECD291CC6CA9C72AB3948C62AF121FF /* SDWebImageOperation.h in Headers */,
+				2BF46A88079AA1294E78250827F5F3FC /* SDWebImagePrefetcher.h in Headers */,
+				288C5FA6B973796965F65028CCCA14C9 /* UIButton+WebCache.h in Headers */,
+				D4CF64D56600E222725026178FBA2291 /* UIImage+GIF.h in Headers */,
+				CCBA9814F93C747496E076FD904D97B6 /* UIImage+MultiFormat.h in Headers */,
+				1F54149AAF79DF7FAAC155046B7BBB66 /* UIImageView+HighlightedWebCache.h in Headers */,
+				AE82B4B43AAA34AFD04DEC88C63013CD /* UIImageView+WebCache.h in Headers */,
+				3E1A4E2514B0AB29C111A1C9F542E6D5 /* UIView+WebCache.h in Headers */,
+				3B9FB14E5CD9F4FD53CC628E7521131C /* UIView+WebCacheOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FA696E2E11FB17A5AF2BB1D467D1F5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73B8E27E70CC4C37B5503AA1C8844F32 /* Pods-Crypto Currency Ticker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		05D85080E0524F346C7A6FD4AFEDB31C /* Pods-Crypto Currency Ticker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F12D7E92E5E41440E3B1D72496BB8AE1 /* Build configuration list for PBXNativeTarget "Pods-Crypto Currency Ticker" */;
+			buildPhases = (
+				D039AF73EDBE11B47AF95A5240232796 /* Sources */,
+				E09B3BB513FF084786C1AD1A0456C5FE /* Frameworks */,
+				A4FA696E2E11FB17A5AF2BB1D467D1F5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97FA5E1BB83EFC9EB81420FA0CCFBE56 /* PBXTargetDependency */,
+				A464F12A7431C71FA1325A69F8AAAD97 /* PBXTargetDependency */,
+			);
+			name = "Pods-Crypto Currency Ticker";
+			productName = "Pods-Crypto Currency Ticker";
+			productReference = 0E5F89B2C820603000BA1A193ECB0D84 /* Pods_Crypto_Currency_Ticker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41F4A04976E2246E670B4C3D4283B537 /* SDWebImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA770F46B4B6A747FFC00C0F4734947B /* Build configuration list for PBXNativeTarget "SDWebImage" */;
+			buildPhases = (
+				3E31B6A6EB417A07F5BEB6C83A074F5E /* Sources */,
+				8BDA7C8FFF3DF5C5200CD6B3C046335B /* Frameworks */,
+				59B3EC1E1C388C8F63342BA368789A53 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDWebImage;
+			productName = SDWebImage;
+			productReference = 2DCB0B1E62918A52383FB4D04830950C /* SDWebImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5CAE7E75B6B13F190E00153035DDC966 /* CrytpoTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A02D8411281D8C5DE384F4DA8E07953E /* Build configuration list for PBXNativeTarget "CrytpoTicker" */;
+			buildPhases = (
+				8F06F3676FED368DF7E965C88332E50A /* Sources */,
+				896658E781E09FE70B20107F61CDFFFA /* Frameworks */,
+				2AADE495BFA1AB95F588CB9CE313E826 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrytpoTicker;
+			productName = CrytpoTicker;
+			productReference = 6A116D5BAABEE4C9795A13F12F5057D5 /* CrytpoTicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AD21D4C5FDF61448F1B912F81E1E6038 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CAE7E75B6B13F190E00153035DDC966 /* CrytpoTicker */,
+				05D85080E0524F346C7A6FD4AFEDB31C /* Pods-Crypto Currency Ticker */,
+				41F4A04976E2246E670B4C3D4283B537 /* SDWebImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E31B6A6EB417A07F5BEB6C83A074F5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A101F2D6E76BB703132C76F0116B4902 /* NSData+ImageContentType.m in Sources */,
+				B191F891DC24F5BA3898E59CF4D3FF7C /* NSImage+WebCache.m in Sources */,
+				B94C5A8E3AAAFF778078C4A5A665B596 /* SDImageCache.m in Sources */,
+				B917F6425D26BF42890E8FB9EF9760B6 /* SDImageCacheConfig.m in Sources */,
+				8E2C26F4C312E4897FC24B7562514957 /* SDWebImage-dummy.m in Sources */,
+				B941642D395ACC7A65AA557B370E6B2D /* SDWebImageCompat.m in Sources */,
+				E8FF791F2C608C2B4166E9C280694981 /* SDWebImageDecoder.m in Sources */,
+				F5F931FB109D43AC0A673F5DB4A822C9 /* SDWebImageDownloader.m in Sources */,
+				660E328A4AF43CF086DFF3225335AC0B /* SDWebImageDownloaderOperation.m in Sources */,
+				3012A079382DB5A0BEE58CE7E0E09DEF /* SDWebImageManager.m in Sources */,
+				399ADE50F093F3223111B57D2DB17E0B /* SDWebImagePrefetcher.m in Sources */,
+				5EFB89980FB29AE90E4F69B80C1DE498 /* UIButton+WebCache.m in Sources */,
+				1A91EC247ED3735A59AF71F72154F6EE /* UIImage+GIF.m in Sources */,
+				DC17A57C0D73E33EC7EB9F1798E5372F /* UIImage+MultiFormat.m in Sources */,
+				F057B9ECA928430D947DF13FF0EC5AA0 /* UIImageView+HighlightedWebCache.m in Sources */,
+				1F497FCE1DE42266AA7C54041CBBC5D4 /* UIImageView+WebCache.m in Sources */,
+				7E7634AFCC8FDDDB143ECFC8FA167FFE /* UIView+WebCache.m in Sources */,
+				61CF8B3BE1EA6D2A7C39AF3D8E2D58DB /* UIView+WebCacheOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F06F3676FED368DF7E965C88332E50A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0897BE69340F6847D8D4055756FC347 /* CoinMarketCapConstants.swift in Sources */,
+				F3EEE8F4FA9A0632E2294670F61729C5 /* CryptoTicker.swift in Sources */,
+				37BB110711BFC7D61D2DAE50A4EF23D8 /* CrytpoTicker-dummy.m in Sources */,
+				95411D82D2E0AC4C788C94C3C927C971 /* CTAPIController.swift in Sources */,
+				430534B6AF1DB3FD690035697FEFE36D /* MRObjectArchive.swift in Sources */,
+				E6468653451DFD3CEB564A22F252C1A4 /* Ticker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D039AF73EDBE11B47AF95A5240232796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0BDACA0B6E6311B8CE93013F1CEB02 /* Pods-Crypto Currency Ticker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97FA5E1BB83EFC9EB81420FA0CCFBE56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CrytpoTicker;
+			target = 5CAE7E75B6B13F190E00153035DDC966 /* CrytpoTicker */;
+			targetProxy = 0627483ECB163D69AB745955949A4B19 /* PBXContainerItemProxy */;
+		};
+		A464F12A7431C71FA1325A69F8AAAD97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 41F4A04976E2246E670B4C3D4283B537 /* SDWebImage */;
+			targetProxy = ACD170010220F83E2BE69EE82262DF25 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2815CA3FD0D37AF0A5AF8FF339AB6A1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B77415A8BC8FA3289AA4ACD38BECD9F7 /* Pods-Crypto Currency Ticker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Crypto Currency Ticker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Crypto Currency Ticker/Pods-Crypto Currency Ticker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Crypto_Currency_Ticker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4988D179250069B441C3DFC94F66A862 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874CD86B2B9F601F6B602120ED2985B9 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8267ED3218C8FF1374FF22A2E5A81A75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 874CD86B2B9F601F6B602120ED2985B9 /* SDWebImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SDWebImage/SDWebImage-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SDWebImage/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SDWebImage/SDWebImage.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SDWebImage;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA881ECD52301E8EFB801829891BC0EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FCF9B326930177259B8081591DF1A7C /* CrytpoTicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CrytpoTicker/CrytpoTicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CrytpoTicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CrytpoTicker/CrytpoTicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = CrytpoTicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DAF0B8CE0C1A6491D4F56729816DC2F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B6E15E586C8877C595424AB02C978D /* Pods-Crypto Currency Ticker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Crypto Currency Ticker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Crypto Currency Ticker/Pods-Crypto Currency Ticker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Crypto_Currency_Ticker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE4CFC20999355EF5E133860C68C1797 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FCF9B326930177259B8081591DF1A7C /* CrytpoTicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CrytpoTicker/CrytpoTicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CrytpoTicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CrytpoTicker/CrytpoTicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = CrytpoTicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFC9E4A7AAD7A607ACE06D95A401A5A /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A02D8411281D8C5DE384F4DA8E07953E /* Build configuration list for PBXNativeTarget "CrytpoTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA881ECD52301E8EFB801829891BC0EB /* Debug */,
+				FE4CFC20999355EF5E133860C68C1797 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA770F46B4B6A747FFC00C0F4734947B /* Build configuration list for PBXNativeTarget "SDWebImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8267ED3218C8FF1374FF22A2E5A81A75 /* Debug */,
+				4988D179250069B441C3DFC94F66A862 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F12D7E92E5E41440E3B1D72496BB8AE1 /* Build configuration list for PBXNativeTarget "Pods-Crypto Currency Ticker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAF0B8CE0C1A6491D4F56729816DC2F9 /* Debug */,
+				2815CA3FD0D37AF0A5AF8FF339AB6A1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
