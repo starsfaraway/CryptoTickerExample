@@ -11,7 +11,7 @@
 <h1>Crypto Ticker Example</h1>
 Example app using the CryptoTicker framework.
 <br>
-Important: Example requires adding the <a href=https://github.com/starsfaraway/CrytpoTicker>CryptoTicker</a> framework as a subproject or pod. 
+
 <br><br>
 <img src=images/example1.png alt=”Screen Shot 1” title=”Menu of Cryptocurrencies” height=640 width=320 />
 <br><br>
