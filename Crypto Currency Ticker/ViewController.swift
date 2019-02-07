@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     func getTickerInfo() {
         CryptoTicker.getTickerInfo(limit: 20, convert: "USD") { (tickerInfo) -> (Void) in
             DispatchQueue.main.async {
-                self.previewDataSource.cryptoInfo = tickerInfo!
+                self.previewDataSource.cryptoInfo = tickerInfo ?? []
                 self.previewCollectionView.reloadData()}
         }
     }

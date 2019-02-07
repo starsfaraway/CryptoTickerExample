@@ -21,14 +21,21 @@ internal class CTAPIController: NSObject, URLSessionDelegate {
     }
     //SINGLETON//////////////////////////////////SINGLETON////////////////////////////////
     
+    public var lastTickerRequest : Date = Date.init(timeIntervalSince1970: 0)
+    
+    //API REQUEsTS LIMITED TO 10 PER MINUTE https://coinmarketcap.com/api/
+    internal func isUpdateAvailable() ->  Bool {
+        return -lastTickerRequest.timeIntervalSinceNow > 7.0
+    }
+    
     fileprivate func setupRequest(type: String, endpoint: String, json: Data?, completion:@escaping (Any?) -> (Void)) {
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig, delegate: self, delegateQueue: nil)
         let url = URL(string: endpoint)
         let request = self.setup(type: type, url: url!, parameters: json)
         let dataTask = session.dataTask(with: request) { (data, request, error) in
-            
-            print("data: \(String(describing: data)), error: \(String(describing: error)), request: \(String(describing: request?.url))")
+            self.lastTickerRequest = Date()
+
             
             if(error != nil) {
                 completion(nil)}
@@ -36,14 +43,8 @@ internal class CTAPIController: NSObject, URLSessionDelegate {
                 completion(nil)}
             
             if let validData = data {
-                do {
-                    MRObjectArchive.saveDataInArchive(data: validData, withExtension: ArchivePaths.lastReceivedTickerInfo)
-                    let retval = try JSONSerialization.jsonObject(with: validData, options: JSONSerialization.ReadingOptions(rawValue: 0))
-                    completion(retval)}
-                catch {
-                    completion(nil)}
+                completion(validData)
             }else {
-                
                 completion(nil)}
         }
         
@@ -73,7 +74,6 @@ internal class CTAPIController: NSObject, URLSessionDelegate {
             endpoint = self.retrieveTickerValues(limit: limit)
         }else {
             endpoint = self.retrieveTickerValues(limit: limit, convert: convert)}
-        
         self.setupRequest(type: "GET", endpoint: endpoint, json: nil, completion: { (response) -> (Void) in
                 completion(response)
         })
@@ -88,6 +88,7 @@ internal class CTAPIController: NSObject, URLSessionDelegate {
             baseUrlString = baseUrlString + "?convert=" + convertString
             if let limitCount : Int = limit {
                 baseUrlString = baseUrlString + "&limit=" + "\(limitCount)"}
+            
         }
         return baseUrlString
     }
@@ -97,6 +98,8 @@ internal class CTAPIController: NSObject, URLSessionDelegate {
         
         if let limitCount : Int = limit {
             baseUrlString = baseUrlString + "?limit=" + "\(limitCount)"}
+        
+
         return baseUrlString
         
     }

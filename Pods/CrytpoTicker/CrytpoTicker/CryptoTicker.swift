@@ -12,31 +12,18 @@ public class CryptoTicker: NSObject {
     //NOTE: ONLY USD CURRENCY SUPPORTED AT THIS TIME
     public class func getTickerInfo(limit: Int?, convert: String?, completion:@escaping ([Ticker]?) -> (Void)) {
         
-        if(Ticker.isUpdateAvailable()) {
+        if(CTAPIController.shared.isUpdateAvailable()) {
             CTAPIController.shared.retrieveTicker(limit: limit, convert: convert) { (response) -> (Void) in
-                if let tickerArray = response as? [NSDictionary] {
-                    NSKeyedArchiver.archiveRootObject(Date(), toFile: MRObjectArchive.filePath(withExtension: ArchivePaths.lastTickerUpdate))
-                    completion(Ticker.createArrayOfTickers(fromArrayOfDicts: tickerArray))}
+                if let tickerData = response as? Data {
+                    guard let tickers = Ticker.decode(data: tickerData) else {
+                        completion(nil)
+                        return}
+                    completion(tickers)}
                 else{
-                    completion(CryptoTicker.getSavedTickerInfo())
+                    //no data to return
                 }
             }
-        }else{
-            completion(CryptoTicker.getSavedTickerInfo())}
-    }
-    
-    internal class func getSavedTickerInfo() -> [Ticker]? {
-        if let data = MRObjectArchive.retrieveDataFromArchive(fromExtension: ArchivePaths.lastReceivedTickerInfo) {
-            do {
-                let jsonObj = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions(rawValue: 0))
-                if let tickerArray = jsonObj as? [NSDictionary] {
-                    return Ticker.createArrayOfTickers(fromArrayOfDicts: tickerArray)}
-            }catch {
-
-            }
         }
-        return nil
     }
-    
 
 }

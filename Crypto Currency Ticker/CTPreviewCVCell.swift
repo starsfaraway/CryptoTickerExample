@@ -26,7 +26,7 @@ class CTPreviewCVCell: UICollectionViewCell {
     func populateCellFor(ticker : Ticker) {
         self.tickerSymbol.text = ticker.symbol
         self.cryptoName.text = ticker.name
-        self.cryptoPrice.text = "$" + "\(ticker.price_usd?.doubleValue ?? 0.0)"
+        self.cryptoPrice.text = "$" + (ticker.price_usd ?? "unk")
         
         if let sym = ticker.symbol {
             if let urlString = self.urlFor(symbol: sym) {
